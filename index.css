@@ -1,0 +1,289 @@
+.header{
+    display:block
+}
+
+/* margin default */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* full width */
+header.header-img {
+  width: 100vw;     
+  height: 300px;   
+  overflow: hidden;
+}
+
+/* Gambar full */
+header.header-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   
+  display: block;      
+}
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 0;
+    background-color: #ffba08; /* kuning cerah */
+    flex-wrap: wrap;
+}
+
+/* Gaya tombol */
+.menu-item {
+    padding: 10px 18px;
+    background: #ffffff;
+    color: #1d3557; /* biru gelap */
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    transition: 0.25s ease;
+}
+
+/* Hover efek */
+.menu-item:hover {
+    background: #f8f9fa;
+    transform: scale(1.07);
+    filter: brightness(1.1);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+/* ============ DROPDOWN WRAPPER ============ */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tombol dropdown */
+.dropbtn {
+    cursor: pointer;
+}
+
+/* ============ ISI DROPDOWN ============ */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 220px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    z-index: 10;
+}
+
+/* Link di dalam dropdown */
+.dropdown-content a {
+    color: #1d3557;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+}
+
+/* Hover item dropdown */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* ============ AKTIFKAN DROPDOWN SAAT HOVER ============ */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Hover tombol utama */
+.dropdown:hover .dropbtn {
+    background: #f8f9fa;
+    transform: scale(1.07);
+    filter: brightness(1.1);
+}
+/* --- Reset & Base Style --- */
+* {
+    box-sizing: border-box; /* Sesuai Modul 6 Hal 4 */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F4F1EA; /* Warna Cream (Earth Tone) */
+    color: #4A403A; /* Warna Cokelat Tua untuk teks */
+    line-height: 1.6;
+}
+
+/* --- Color Palette Variables --- */
+:root {
+    --primary-sage: #8FBC8F; /* Hijau Sage */
+    --dark-green: #556B2F;   /* Hijau Zaitun Gelap */
+    --terracotta: #C07858;   /* Merah Bata Pucat */
+    --sand: #E6DCCD;         /* Warna Pasir */
+    --white: #ffffff;
+}
+
+/* --- Header --- */
+.header {
+   .header{
+    display:block
+}
+
+/* margin default */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* full width */
+header.header-img {
+  width: 100vw;     
+  height: 300px;   
+  overflow: hidden;
+}
+
+/* Gambar full */
+header.header-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   
+  display: block;      
+}
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* --- Navigation Bar --- */
+/* Sesuai Modul 6: Navbar Layout */
+.navbar {
+    background-color: var(--terracotta);
+    overflow: hidden;
+    position: sticky; /* Membuat menu menempel saat discroll */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: var(--white);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s; /* Efek transisi halus */
+}
+
+/* Efek Hover pada Menu */
+.navbar a:hover {
+    background-color: var(--sand);
+    color: var(--dark-green);
+}
+
+/* --- Container & Layout --- */
+.container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--primary-sage);
+    color: var(--white);
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.btn 
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #A05535;
+}
+
+/* Layout Kolom (Responsive) */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Kolom Kiri (65%) */
+.column.left {
+    flex: 65%;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Kolom Kanan (35%) */
+.column.right {
+    flex: 30%;
+    /* Flex sisa ruang akan menyesuaikan */
+}
+
+.card-highlight {
+    background-color: var(--sand);
+    padding: 20px;
+    border-left: 5px solid var(--terracotta);
+    border-radius: 5px;
+}
+
+/* --- List Styling (Fitur List) --- */
+.targets-section {
+    margin-top: 30px;
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    border-top: 4px solid var(--primary-sage);
+}
+
+.target-list {
+    list-style-type: none; /* Hilangkan bullet point standar */
+    padding: 0;
+}
+
+.target-list li {
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 5px solid var(--primary-sage);
+    transition: 0.3s; /* Efek Hover pada List */
+}
+
+/* Hover Effect pada List Item */
+.target-list li:hover {
+    background-color: var(--primary-sage);
+    color: var(--white);
+    padding-left: 25px; /* Teks bergeser sedikit ke kanan */
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* --- Responsive untuk Mobile --- */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
